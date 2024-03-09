@@ -5,7 +5,7 @@ class TutorialDataService {
     getAllTutorials() {
         //http://85.159.71.66:8080/api/tutorials
         //[{"id":1,"title":"tutorial",}]
-        return http.get("/tutorials");
+        return http.get("/todos");
     }
     //detayını getiren fonksiyon
     getTutorialDetail(id) {
@@ -31,6 +31,7 @@ class TutorialDataService {
      findByTitle(title) {
         return http.get(`/tutorial/${title}`);
      }
+     
 }
 
 export default new TutorialDataService();

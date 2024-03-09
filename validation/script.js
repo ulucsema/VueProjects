@@ -58,7 +58,7 @@ repassword.addEventListener('keyup', function() {
     } else {
         basarili(repassword);
     }
-});
+})
 
 
 form.addEventListener('submit', function(e) {

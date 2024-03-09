@@ -14,7 +14,7 @@
     <div class="col-md-6">
       <h4>Tutorial Listesi</h4>
       <ul>
-        <li class="list-group-item" :class="{ active : index == guncelIndex}" v-for="(tutorial,index) in tutorials" :key="index" @click="aktifTutorial(tutorial,index)">
+        <li class="list-group-item" :class="{ active : index == guncelIndex}" v-for="(tutorial,index) in tutorials" :key="tutorial.id" >
           {{tutorial.title}} - {{tutorial.description}}
         </li>
       </ul>
